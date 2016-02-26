@@ -1,4 +1,4 @@
-Magnetic = {
+var Magnetic = {
   elements: [],
   getY: function(event) {
 			var yPos = event.pageY - window.innerHeight/2;
@@ -25,7 +25,6 @@ Magnetic = {
   },
   init: function() {
     this.elements.push(arguments);
-    console.log(this.elements);
     this.bindEvents();
   }
 };
